@@ -33,7 +33,7 @@ void testEtudiant(void);
 // fonction setup (est appelée une sule fois au lancement du programme)
 //********************************************************************************
 void setup() {
-  Serial.begin(115200);           // Démarrer le port série par défaut à 9600bauds
+  Serial.begin(9600);             // Démarrer le port série par défaut à 9600bauds
   printf("Hello world !\n\n");
 
   pinMode(LED_BUILTIN, OUTPUT);   // DEL embarqué configuré en sortie

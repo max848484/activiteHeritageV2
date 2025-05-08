@@ -14,12 +14,12 @@
 
 //Définition de la méthode setMatricule de la classe, permet de modifier le matricule de l'étudiant
 void Etudiant::setMatricule(int nouveauMatricule){
-    //Le numÃ©rod de matricule doit nÃ©cessairement avoir 6 chiffres
-    if ((nouveauMatricule >= 100000) && (nouveauMatricule <= 999999)){
+    //Le numero de matricule doit necessairement avoir 7 chiffres
+    if ((nouveauMatricule >= 1000000) && (nouveauMatricule <= 9999999)){
         this->numeroMatricule = nouveauMatricule;    
     }
     else{
-        this->numeroMatricule = 999999;
+        this->numeroMatricule = 0; //Le matricule est mis à 0 si le matricule n'est pas valide
     }
 }
 
